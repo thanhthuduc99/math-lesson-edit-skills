@@ -1,0 +1,8 @@
+*.mp4
+*.mov
+*.wav
+media/
+__pycache__/
+ml/
+screens/
+!docs/media/
