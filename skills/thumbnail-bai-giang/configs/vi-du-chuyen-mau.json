@@ -1,0 +1,31 @@
+{
+ "pdf": "de.pdf",
+ "title": "CÂU PHÂN LOẠI 17 BÓNG ĐÈN",
+ "badge": "số 01",
+ "bar": [
+  "blue",
+  "pink"
+ ],
+ "figures": [
+  {
+   "page": 3,
+   "bbox": [
+    408,
+    513,
+    505,
+    610
+   ]
+  },
+  {
+   "page": 16,
+   "bbox": [
+    221,
+    152,
+    335,
+    266
+   ]
+  }
+ ],
+ "teacher": "teacher/thay-2.png",
+ "out": "out/vi-du-chuyen-mau.jpg"
+}

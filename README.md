@@ -1,11 +1,12 @@
 # Skills edit video bài giảng toán
 
-2 skill Claude Code để edit video chữa đề toán (quay màn hình bảng + webcam giáo viên) hoàn toàn bằng code: ffmpeg, faster-whisper, Manim, u2net. Không dùng API trả phí.
+3 skill Claude Code cho video chữa đề toán (quay màn hình bảng + webcam giáo viên), làm hoàn toàn bằng code: ffmpeg, faster-whisper, Manim, u2net, Pillow. Không dùng API trả phí.
 
 | Skill | Đầu vào | Đầu ra |
 |---|---|---|
 | [`edit-bai-giang-dai`](skills/edit-bai-giang-dai/SKILL.md) | Video ngang nhiều câu | Video ngang, giữ màn hình thầy live, thêm card bài giải trắng vào vùng bảng trống |
 | [`edit-bai-giang-short`](skills/edit-bai-giang-short/SKILL.md) | 1 câu trong video ngang | Video dọc 1080x1920 kiểu TikTok, dựng lại đề + lời giải, thầy tách nền góc dưới |
+| [`thumbnail-bai-giang`](skills/thumbnail-bai-giang/SKILL.md) | PDF đề / bài giảng + ảnh thầy | Thumbnail 1280x720 style kênh thầy Đức + description YouTube |
 
 ## edit-bai-giang-dai
 
@@ -21,6 +22,12 @@ Card hiện từng bước theo lời thầy: hình, các dòng biến đổi, k
 
 <p><img width="240" src="docs/media/short_clip.gif" alt="Đoạn short: điểm dữ liệu hiện lên đồ thị v(t) và hệ phương trình viết dần"></p>
 
+## thumbnail-bai-giang
+
+![10 thumbnail dựng bằng code: thanh tiêu đề màu có badge, 2 hình cắt từ PDF đề tô hồng, ảnh thầy ở giữa](docs/media/thumb_showcase.jpg)
+
+Hình cắt thẳng từ PDF (`figs.py` quét ra toạ độ), nét đen đổi sang hồng. Mỗi tấm là 1 file JSON: tiêu đề, badge, màu thanh, 2 hình, ảnh thầy. Ảnh thầy và font Montserrat không có trong repo, xem SKILL.md.
+
 ## Cài
 
 Copy thư mục skill vào `~/.claude/skills/`:
@@ -30,6 +37,6 @@ git clone https://github.com/thanhthuduc99/math-lesson-edit-skills
 cp -r math-lesson-edit-skills/skills/* ~/.claude/skills/
 ```
 
-Cần: `ffmpeg`, Python 3.11+, `manim` 0.22, `faster-whisper`, `opencv-python`, `onnxruntime`, `Pillow`. Font Windows: Segoe UI, Cambria Math, Bahnschrift.
+Cần: `ffmpeg`, Python 3.11+, `manim` 0.22, `faster-whisper`, `opencv-python`, `onnxruntime`, `Pillow`, `pymupdf`. Font Windows: Segoe UI, Cambria Math, Bahnschrift.
 
-Rồi nói với Claude Code: "edit video bài giảng dài này" hoặc "làm short bài giảng từ câu 1".
+Rồi nói với Claude Code: "edit video bài giảng dài này" "làm short bài giảng từ câu 1" hoặc "làm thumbnail chữa đề này".

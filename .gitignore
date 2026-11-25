@@ -6,3 +6,7 @@ __pycache__/
 ml/
 screens/
 !docs/media/
+skills/thumbnail-bai-giang/teacher/*.png
+skills/thumbnail-bai-giang/fonts/
+skills/thumbnail-bai-giang/out/
+*.ttf

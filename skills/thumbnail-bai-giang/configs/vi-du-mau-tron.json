@@ -1,0 +1,28 @@
+{
+ "pdf": "de.pdf",
+ "title": "ĐỀ GIỮA HK1 NGUYỄN KHUYẾN",
+ "badge": "2026-2027",
+ "bar": "pink",
+ "figures": [
+  {
+   "page": 10,
+   "bbox": [
+    408,
+    328,
+    508,
+    451
+   ]
+  },
+  {
+   "page": 16,
+   "bbox": [
+    221,
+    152,
+    335,
+    266
+   ]
+  }
+ ],
+ "teacher": "teacher/thay-1.png",
+ "out": "out/vi-du-mau-tron.jpg"
+}

@@ -1,0 +1,31 @@
+{
+ "pdf": "de.pdf",
+ "title": "XÁC SUẤT 17 BÓNG ĐÈN",
+ "badge": "(LẦN 1)",
+ "bar": "pink",
+ "font": "condensed",
+ "badge_bg": "#FFF4CC",
+ "figures": [
+  {
+   "page": 15,
+   "bbox": [
+    216,
+    321,
+    344,
+    448
+   ],
+   "clear_bg": true
+  },
+  {
+   "page": 16,
+   "bbox": [
+    221,
+    152,
+    335,
+    266
+   ]
+  }
+ ],
+ "teacher": "teacher/thay-1.png",
+ "out": "out/vi-du-chu-hep.jpg"
+}
