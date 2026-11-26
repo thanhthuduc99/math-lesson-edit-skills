@@ -2,13 +2,14 @@
 
 Bộ skill Claude Code cho video chữa đề toán (quay màn hình bảng + webcam giáo viên): edit video dài, cắt short, viết title + description, làm thumbnail, và tuỳ chọn tự đăng YouTube. Làm hoàn toàn bằng code: ffmpeg, faster-whisper, Manim, u2net, Pillow. Không dùng API trả phí.
 
-| Skill | Đầu vào | Đầu ra |
-|---|---|---|
-| [`edit-bai-giang-dai`](skills/edit-bai-giang-dai/SKILL.md) | Video ngang nhiều câu | Video ngang, giữ màn hình thầy live, thêm card bài giải trắng vào vùng bảng trống |
-| [`edit-bai-giang-short`](skills/edit-bai-giang-short/SKILL.md) | 1 câu trong video ngang | Video dọc 1080x1920 kiểu TikTok, dựng lại đề + lời giải, thầy tách nền góc dưới |
-| [`youtube-title-description`](skills/youtube-title-description/SKILL.md) | Video cuối + PDF đáp án | 3 title để chọn, description SEO, timestamp từng câu |
-| [`thumbnail-bai-giang`](skills/thumbnail-bai-giang/SKILL.md) | PDF đề / bài giảng | Thumbnail 1280x720 style kênh thầy Đức, ảnh thầy có sẵn |
-| [`auto-post-youtube`](skills/auto-post-youtube/SKILL.md) (tuỳ chọn) | Video + title + description + thumbnail | Video private trên kênh, cần setup OAuth riêng |
+| Skill | Đầu vào | Đầu ra | Câu prompt nhắn cho AI |
+|---|---|---|---|
+| [`edit-bai-giang-dai`](skills/edit-bai-giang-dai/SKILL.md) | Video ngang nhiều câu | Video ngang, giữ màn hình thầy live, thêm card bài giải trắng vào vùng bảng trống | "Edit video bài giảng dài này: `video.mp4`, đáp án ở `de.pdf`." |
+| [`edit-bai-giang-short`](skills/edit-bai-giang-short/SKILL.md): chọn câu | 1 hoặc vài câu trong video ngang | Mỗi câu 1 video dọc 1080x1920 kiểu TikTok, dựng lại đề + lời giải, thầy tách nền góc dưới | "Từ video dài vừa edit, làm short câu 3, Phần II câu 1 và Phần III câu 5." |
+| [`edit-bai-giang-short`](skills/edit-bai-giang-short/SKILL.md): tất cả các câu | Cả video ngang | 1 short cho mỗi câu trong đề, render lần lượt từng cái | "Làm short tất cả các câu trong video `video.mp4`, đáp án ở `de.pdf`." |
+| [`youtube-title-description`](skills/youtube-title-description/SKILL.md) | Video cuối + PDF đáp án | 3 title để chọn, description SEO, timestamp từng câu | "Viết title, description và timestamp cho video dài, link đề: `<link drive>`." |
+| [`thumbnail-bai-giang`](skills/thumbnail-bai-giang/SKILL.md) | PDF đề / bài giảng | Thumbnail 1280x720 style kênh thầy Đức, ảnh thầy có sẵn | "Làm thumbnail video dài, tiêu đề \"ĐỀ GIỮA HK1 NGUYỄN KHUYẾN\", badge \"2026-2027\"." |
+| [`auto-post-youtube`](skills/auto-post-youtube/SKILL.md) (tuỳ chọn) | Video + title + description + thumbnail | Video private trên kênh, cần setup OAuth riêng | "Đăng video dài lên YouTube với title số 1." |
 
 ## 1. Edit long: `edit-bai-giang-dai`
 

@@ -1,6 +1,6 @@
 ---
 name: edit-bai-giang-short
-description: Cắt 1 câu trong video bài giảng toán ngang (bảng + webcam) thành video dọc TikTok 1080x1920 khoảng 2 phút. Dựng lại đề và lời giải bằng Manim (nền chấm, header logo, chip, tiêu đề lớn, hộp phụ đề), tách nền giáo viên từ webcam bằng u2net rồi đặt góc dưới phải. Không API trả phí. Dùng khi user nói "làm short bài giảng", "cắt video toán thành TikTok", "video dọc chữa đề", "edit short bài giảng".
+description: Cắt 1 câu, vài câu hoặc tất cả các câu trong video bài giảng toán ngang (bảng + webcam) thành video dọc TikTok 1080x1920 khoảng 2 phút. Dựng lại đề và lời giải bằng Manim (nền chấm, header logo, chip, tiêu đề lớn, hộp phụ đề), tách nền giáo viên từ webcam bằng u2net rồi đặt góc dưới phải. Không API trả phí. Dùng khi user nói "làm short bài giảng", "cắt video toán thành TikTok", "video dọc chữa đề", "edit short bài giảng", "làm short tất cả các câu".
 ---
 
 # Edit bài giảng short: video dọc 1080x1920
@@ -14,6 +14,13 @@ Ví dụ: câu "tìm hàm bậc ba từ bảng số", 118.4 s, 5 scene.
 - `ffmpeg`, Python 3.11+, `faster-whisper`, `numpy`, `opencv-python`, `onnxruntime`.
 - Model `u2net_human_seg.onnx` ở `~/.rembg/models/u2net_human_seg/` (tải 1 lần qua `rembg` hoặc từ release của rembg).
 - Manim CE 0.22. Font: Segoe UI, Segoe UI Black, Bahnschrift, Cambria Math.
+
+## 2 cách dùng
+
+- **Chọn câu**: "Từ video dài vừa edit, làm short câu 3, Phần II câu 1 và Phần III câu 5." Chạy quy trình dưới cho từng câu được nêu.
+- **Tất cả các câu**: "Làm short tất cả các câu trong video `video.mp4`, đáp án ở `de.pdf`." Lấy mốc từng câu từ transcript cả video (dùng lại transcript của bước edit video dài, hoặc `youtube-title-description/scripts/chapters.py`), mỗi câu là 1 đoạn từ mốc câu đó tới mốc câu sau. Câu dài quá 3 phút thì rút gọn ở bước cắt vấp. Duyệt sheet ảnh tĩnh của tất cả short trong 1 lần, rồi render lần lượt từng short.
+
+Mỗi short 1 folder con `short-<phần>-<câu>/`, ví dụ `short-p2-c1/`.
 
 ## Quy trình
 
