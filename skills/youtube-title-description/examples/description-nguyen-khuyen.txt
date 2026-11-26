@@ -1,5 +1,7 @@
-TIÊU ĐỀ
-Chữa đề giữa kì 1 Toán 12 THPT Nguyễn Khuyến Bình Dương 2026-2027 (mã 121) | Thầy Đỗ Văn Đức
+TIÊU ĐỀ (chọn 1)
+1. Chữa đề giữa kì 1 Toán 12 THPT Nguyễn Khuyến Bình Dương 2026-2027 (mã 121) | Thầy Đỗ Văn Đức
+2. Chữa Đề Giữa Kì 1 Toán 12 Nguyễn Khuyến | Câu Phân Loại 17 Bóng Đèn | Thầy Đức
+3. Đề giữa HK1 Toán 12 Nguyễn Khuyến Bình Dương (mã 121) | Đáp Án + Lời Giải Chi Tiết | Thầy Đỗ Văn Đức
 
 MÔ TẢ
 Chữa chi tiết đề kiểm tra đánh giá thường xuyên (giữa học kì 1) Toán 12 trường THCS và THPT Nguyễn Khuyến – Bình Dương, ngày 1/11/2026 (mã đề 121) cùng thầy Đỗ Văn Đức. Có đáp án, lời giải chi tiết và cách xử lý nhanh từng dạng.
@@ -15,20 +17,21 @@ Chữa chi tiết đề kiểm tra đánh giá thường xuyên (giữa học k�
 • Phần III, câu 6: tối ưu chi phí vận chuyển 180 km, áp dụng bất đẳng thức Cô-si cho 3 số để tìm vận tốc.
 
 ⏱️ NỘI DUNG VIDEO
+(mm:ss: chạy scripts/chapters.py trên video cuối rồi điền)
 00:00 Giới thiệu đề kiểm tra Toán 12 THPT Nguyễn Khuyến
-Phần I, câu 1 đến 4: GTNN trên đoạn, phương trình mũ, tổng hai vectơ, đếm tiệm cận từ bảng biến thiên
-Phần I, câu 5 đến 8: Tích vô hướng trong tứ diện đều, phương trình lượng giác, tọa độ điểm trong Oxyz, khoảng biến thiên mẫu số liệu ghép nhóm
-Phần I, câu 9 đến 12: Nhận dạng đồ thị hàm bậc ba, tọa độ vectơ, khoảng nghịch biến, điểm đối xứng qua mặt phẳng (Oyz)
-Phần II, câu 1: Lăng trụ tam giác đều: góc, khoảng cách, thể tích
-Phần II, câu 2: Khoảng tứ phân vị, so sánh độ phân tán điểm thi hai lớp
-Phần II, câu 3: Hàm phân thức: tính đơn điệu, tâm đối xứng, tiếp tuyến, điểm có tọa độ nguyên
-Phần II, câu 4: Gắn hệ trục Oxyz vào hình hộp chữ nhật
-Phần III, câu 1: Hàm bậc ba mô tả tốc độ ô tô
-Phần III, câu 2: Góc giữa đường thẳng và mặt phẳng
-Phần III, câu 3: Tọa độ vectơ AM với 2BM = MC
-Phần III, câu 4: Khoảng tứ phân vị tuổi thọ của ong
-Phần III, câu 5: Câu phân loại: xác suất 17 bóng đèn trên banner
-Phần III, câu 6: Bài toán thực tế tối ưu chi phí vận chuyển
+00:33 Phần I, câu 1 đến 4: GTNN trên đoạn, phương trình mũ, tổng hai vectơ, đếm tiệm cận từ bảng biến thiên
+mm:ss Phần I, câu 5 đến 8: Tích vô hướng trong tứ diện đều, phương trình lượng giác, tọa độ điểm trong Oxyz, khoảng biến thiên mẫu số liệu ghép nhóm
+mm:ss Phần I, câu 9 đến 12: Nhận dạng đồ thị hàm bậc ba, tọa độ vectơ, khoảng nghịch biến, điểm đối xứng qua mặt phẳng (Oyz)
+mm:ss Phần II, câu 1: Lăng trụ tam giác đều: góc, khoảng cách, thể tích
+mm:ss Phần II, câu 2: Khoảng tứ phân vị, so sánh độ phân tán điểm thi hai lớp
+mm:ss Phần II, câu 3: Hàm phân thức: tính đơn điệu, tâm đối xứng, tiếp tuyến, điểm có tọa độ nguyên
+mm:ss Phần II, câu 4: Gắn hệ trục Oxyz vào hình hộp chữ nhật
+mm:ss Phần III, câu 1: Hàm bậc ba mô tả tốc độ ô tô
+mm:ss Phần III, câu 2: Góc giữa đường thẳng và mặt phẳng
+mm:ss Phần III, câu 3: Tọa độ vectơ AM với 2BM = MC
+mm:ss Phần III, câu 4: Khoảng tứ phân vị tuổi thọ của ong
+mm:ss Phần III, câu 5: Câu phân loại: xác suất 17 bóng đèn trên banner
+mm:ss Phần III, câu 6: Bài toán thực tế tối ưu chi phí vận chuyển
 
 ✅ ĐÁP ÁN NHANH (MÃ ĐỀ 121)
 Phần I: 1B, 2C, 3D, 4C, 5D, 6A, 7D, 8B, 9A, 10D, 11C, 12C

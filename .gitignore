@@ -9,3 +9,5 @@ screens/
 skills/thumbnail-bai-giang/fonts/
 skills/thumbnail-bai-giang/out/
 *.ttf
+.env
+client_secret*.json
